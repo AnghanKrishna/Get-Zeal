@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_works"
+        android:title="@string/work" />
+
+    <item
+        android:id="@+id/nav_get_started"
+        android:title="@string/get_started" />
+
+    <item
+        android:id="@+id/nav_help"
+        android:title="@string/help" />
+
+    <item
+        android:id="@+id/nav_signin"
+        android:title="@string/signin" />
+
+    <item
+        android:id="@+id/nav_aboutus"
+        android:title="@string/aboutus" />
+
+    <item
+        android:id="@+id/nav_careers"
+        android:title="@string/carrers" />
+
+    <item
+        android:id="@+id/nav_blog"
+        android:title="@string/blog" />
+
+    <item
+        android:id="@+id/nav_business_partner"
+        android:title="@string/partner_buseness" />
+
+    <item
+        android:id="@+id/nav_contactus"
+        android:title="@string/contactus" />
+
+    <item
+        android:id="@+id/nav_contact_sale"
+        android:title="@string/contact_sale" />
+</menu>

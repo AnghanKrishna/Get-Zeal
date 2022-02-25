@@ -33,15 +33,22 @@
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/search.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/search_gray.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/user_gray.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_home.xml" value="0.15" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
-        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/fragment_login.xml" value="0.13" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/fragment_main.xml" value="0.17760416666666667" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/fragment_signin.xml" value="0.13" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/fragment_signup.xml" value="0.17" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/home_nevigation.xml" value="0.14" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/list_view_item_row.xml" value="0.18" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/logindailog_layout.xml" value="0.16" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/row_nav_drawer.xml" value="0.21" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/signupdailog_layout.xml" value="0.16" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/toolbar.xml" value="0.14" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/work.xml" value="0.18" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/menu/navigation_menu.xml" value="0.18" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/menu/nevigation.xml" value="0.22" />
       </map>
     </option>
   </component>

@@ -6,9 +6,11 @@ import android.widget.FrameLayout
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var tvlogin: TextView
     private lateinit var tvsignup: TextView
     private lateinit var flmain: FrameLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
@@ -27,20 +29,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     //calling fragment in cardview
-    private fun signupFragment() {
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        val signupfrag = SignupFragment()
-        fragmentTransaction.add(R.id.flmain, signupfrag)
-        fragmentTransaction.commit()
-    }
-
-    //calling fragment in cardview
     private fun loginFragment() {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         val loginfrag = LoginFragment()
         fragmentTransaction.add(R.id.flmain, loginfrag)
+        fragmentTransaction.commit()
+    }
+
+    //calling fragment in cardview
+    private fun signupFragment() {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        val signupfrag = SignupFragment()
+        fragmentTransaction.add(R.id.flmain, signupfrag)
         fragmentTransaction.commit()
     }
 }

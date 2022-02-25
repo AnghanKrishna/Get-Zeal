@@ -26,10 +26,10 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_fullnm"
+            android:id="@+id/signup_fullnm"
             android:layout_width="match_parent"
-            android:layout_margin="10dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edittext_border"
             android:drawableStart="@drawable/user_gray"
@@ -40,10 +40,10 @@
             android:textColor="@color/pink_dark" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/etsignup_email"
+            android:id="@+id/signup_email"
             android:layout_width="match_parent"
-            android:layout_margin="10dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edittext_border"
             android:drawableStart="@drawable/mail_outline_gray"
@@ -54,10 +54,10 @@
             android:textColor="@color/pink_dark" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/etsignup_pass"
-            android:layout_margin="10dp"
+            android:id="@+id/signup_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edittext_border"
             android:drawableStart="@drawable/key_gray"

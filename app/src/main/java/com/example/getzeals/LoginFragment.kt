@@ -1,11 +1,14 @@
 package com.example.getzeals
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,6 +26,10 @@ open class LoginFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    lateinit var login_email: EditText
+    lateinit var login_pass: EditText
+    lateinit var btnsignup: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -36,7 +43,21 @@ open class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_login, container, false)
+        login_email = view.findViewById(R.id.login_email)
+        login_pass = view.findViewById(R.id.login_pass)
+        btnsignup = view.findViewById(R.id.btnsignup)
+        btnsignup.setOnClickListener { btnlogin() }
+        return view
+    }
+
+    private fun btnlogin() {
+        if (login_email.text.isEmpty() || login_pass.text.isEmpty()) {
+            Toast.makeText(requireContext(), "Enter both the fields", Toast.LENGTH_SHORT).show()
+        } else {
+            val intent = Intent(activity, HomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     companion object {

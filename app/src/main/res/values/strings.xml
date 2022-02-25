@@ -1,18 +1,30 @@
 <resources>
     <string name="app_name">GetZeals</string>
 
-    <string name="signup">SIGN UP</string>
-    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="facebook">Facebook</string>
 
-<!--    home nevigation-->
+    <!--    home nevigation-->
     <string name="work">WORK</string>
     <string name="get_started">GET STARTED</string>
     <string name="help">HELP</string>
-    <string name="signin">SIGN IN</string>
+    <string name="sign_in">SIGN IN</string>
     <string name="aboutus">ABOUT US</string>
     <string name="carrers">CARRERS</string>
     <string name="blog">BLOG</string>
     <string name="partner_buseness">BE A PARTNER BUSINESS</string>
     <string name="contactus">CONTACT US</string>
     <string name="contact_sale">CONTACT SALES</string>
+
+    <!--    home content-->
+    <string name="search_text">Restaurant, Brewery</string>
+    <string name="city_zip">City/Zip</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="fullname">Full Name</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="tab_header">Sign In to Earn Great Zeals!!</string>
+    <string name="tv_create_acc">Or Create an Account with</string>
+    <string name="tv_signin">Or Sign In with</string>
 </resources>

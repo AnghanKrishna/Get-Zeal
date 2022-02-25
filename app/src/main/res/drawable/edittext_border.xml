@@ -6,7 +6,8 @@
             <solid android:color="#00000000" />
             <corners android:radius="10dp" />
             <!--button border-->
-            <stroke android:width="2dp" android:color="#A7B1A2" />
+<!--            <stroke android:width="2dp" android:color="#A7B1A2" />-->
+            <stroke android:width="2dp" android:color="@color/pink_light" />
         </shape>
     </item>
 </selector>

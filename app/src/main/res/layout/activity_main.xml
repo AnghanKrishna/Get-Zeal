@@ -1,63 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_light"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/llheader"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/loginid"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#ED2D92">
+        android:rotation="90"
+        android:text="@string/signin"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/signupid"
+        app:layout_constraintEnd_toStartOf="@+id/flmain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<!--        <include-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            layout="@layout/home_nevigation" />-->
+    <TextView
+        android:id="@+id/signupid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:text="@string/signup"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/flmain"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginid" />
+
+    <FrameLayout
+        android:id="@+id/flmain"
+        android:layout_width="300dp"
+        android:layout_height="700dp"
+        android:background="@drawable/round_btn_white"
+        android:backgroundTint="@color/pink_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
-            android:id="@+id/zeal_logo"
+            android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
             android:src="@drawable/zeal_logo" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/signin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5sp"
-            android:text="@string/signin"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:layout_marginLeft="20dp"
-            android:textStyle="bold" />
+    </FrameLayout>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/signup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5sp"
-            android:text="@string/signup"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_below="@+id/llheader">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

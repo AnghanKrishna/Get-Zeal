@@ -1,39 +1,46 @@
 package com.example.getzeals
 
-import android.app.Dialog
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.widget.FrameLayout
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-
-    lateinit var signin: TextView
-    lateinit var signup: TextView
-    private val context: Context = this
-
+    private lateinit var tvlogin: TextView
+    private lateinit var tvsignup: TextView
+    private lateinit var flmain: FrameLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
-        signin = findViewById(R.id.signin)
-        signup = findViewById(R.id.signup)
-        signin.setOnClickListener (loginDailog)
-        signup.setOnClickListener (signupDailog)
+        tvlogin = findViewById(R.id.loginid)
+        tvsignup = findViewById(R.id.signupid)
+        flmain = findViewById(R.id.flmain)
 
+        tvlogin.setOnClickListener {
+            loginFragment()
+        }
+        tvsignup.setOnClickListener {
+            signupFragment()
+        }
     }
 
-    private var loginDailog = View.OnClickListener {
-        val dialog = Dialog(context)
-        dialog.setContentView(R.layout.logindailog_layout)
-        dialog.show()
+    //calling fragment in cardview
+    private fun signupFragment() {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        val signupfrag = SignupFragment()
+        fragmentTransaction.add(R.id.flmain, signupfrag)
+        fragmentTransaction.commit()
     }
 
-    private var signupDailog = View.OnClickListener {
-        val dialog = Dialog(context)
-        dialog.setContentView(R.layout.signupdailog_layout)
-        dialog.show()
+    //calling fragment in cardview
+    private fun loginFragment() {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        val loginfrag = LoginFragment()
+        fragmentTransaction.add(R.id.flmain, loginfrag)
+        fragmentTransaction.commit()
     }
-
 }

@@ -1,41 +1,29 @@
 package com.example.getzeals
 
+import android.os.Build
 import android.os.Bundle
-import android.view.MenuItem
-import androidx.appcompat.app.ActionBarDrawerToggle
+import android.view.WindowManager
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.drawerlayout.widget.DrawerLayout
 
 class HomeActivity : AppCompatActivity() {
-    private var drawerLayout: DrawerLayout? = null
-    private var actionBarDrawerToggle: ActionBarDrawerToggle? = null
+    lateinit var ivmenu:ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide() //hide the app name on tool bar
         setContentView(R.layout.activity_home)
 
-        // drawer layout instance to toggle the menu icon to open
-        // drawer and back button to close drawer
-        drawerLayout = findViewById(R.id.my_drawer_layout)
-        actionBarDrawerToggle =
-            ActionBarDrawerToggle(this, drawerLayout, R.string.nav_open, R.string.nav_close)
+        //change the status bar color
+        if (Build.VERSION.SDK_INT >= 21) {
+            val window = this.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+            window.statusBarColor = this.resources.getColor(R.color.pink)
+        }
 
-        // pass the Open and Close toggle for the drawer layout listener
-        // to toggle the button
-        drawerLayout?.addDrawerListener(actionBarDrawerToggle!!)
-        actionBarDrawerToggle!!.syncState()
+        ivmenu=findViewById(R.id.ivmenu)
+        ivmenu.setOnClickListener {
 
-        // to make the Navigation drawer icon always appear on the action bar
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-    }
-
-    // override the onOptionsItemSelected()
-    // function to implement
-    // the item click listener callback
-    // to open and close the navigation
-    // drawer when the icon is clicked
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return if (actionBarDrawerToggle!!.onOptionsItemSelected(item)) {
-            true
-        } else super.onOptionsItemSelected(item)
+        }
     }
 }

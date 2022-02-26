@@ -56,7 +56,7 @@ open class SignupFragment : Fragment() {
         if (signup_fullnm.text.isEmpty() || signup_email.text.isEmpty() || signup_pass.text.isEmpty()) {
             Toast.makeText(requireContext(), "Enter all the fields", Toast.LENGTH_SHORT).show()
         } else {
-            val intent = Intent(activity, HomeActivity::class.java)
+            val intent = Intent(activity, SidebarActivity::class.java)
             startActivity(intent)
         }
     }

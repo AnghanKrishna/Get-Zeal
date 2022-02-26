@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/nav_works"
-        android:title="@string/work" />
-
-    <item
-        android:id="@+id/nav_get_started"
-        android:title="@string/get_started" />
-
-    <item
-        android:id="@+id/nav_help"
-        android:title="@string/help" />
-
-    <item
-        android:id="@+id/nav_signin"
-        android:title="@string/signin" />
 
     <item
         android:id="@+id/nav_aboutus"

@@ -1,7 +1,9 @@
 package com.example.getzeals
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.FrameLayout
 import android.widget.TextView
 
@@ -13,13 +15,24 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
+        supportActionBar?.hide() //hide the app name on tool bar
         setContentView(R.layout.activity_main)
+
+//change the status bar color
+        if (Build.VERSION.SDK_INT >= 21) {
+            val window = this.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+            window.statusBarColor = this.resources.getColor(R.color.pink)
+        }
 
         tvlogin = findViewById(R.id.loginid)
         tvsignup = findViewById(R.id.signupid)
         flmain = findViewById(R.id.flmain)
 
+        loginFragment() //default login fragment called on app launch
+
+//        click listener on login and signup text
         tvlogin.setOnClickListener {
             loginFragment()
         }

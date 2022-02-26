@@ -55,7 +55,7 @@ open class LoginFragment : Fragment() {
         if (login_email.text.isEmpty() || login_pass.text.isEmpty()) {
             Toast.makeText(requireContext(), "Enter both the fields", Toast.LENGTH_SHORT).show()
         } else {
-            val intent = Intent(activity, HomeActivity::class.java)
+            val intent = Intent(activity, SidebarActivity::class.java)
             startActivity(intent)
         }
     }

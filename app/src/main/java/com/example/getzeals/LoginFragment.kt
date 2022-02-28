@@ -10,25 +10,17 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [loginFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 open class LoginFragment : Fragment() {
 
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
-    lateinit var login_email: EditText
-    lateinit var login_pass: EditText
-    lateinit var btnsignup: Button
+    private lateinit var loginEmail: EditText
+    private lateinit var loginPass: EditText
+    private lateinit var btnSignIn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,18 +36,18 @@ open class LoginFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_login, container, false)
-        login_email = view.findViewById(R.id.login_email)
-        login_pass = view.findViewById(R.id.login_pass)
-        btnsignup = view.findViewById(R.id.btnsignup)
-        btnsignup.setOnClickListener { btnlogin() }
+        loginEmail = view.findViewById(R.id.loginEmail)
+        loginPass = view.findViewById(R.id.loginPass)
+        btnSignIn = view.findViewById(R.id.btnLogIn)
+        btnSignIn.setOnClickListener { btnLogin() }
         return view
     }
 
-    private fun btnlogin() {
-        if (login_email.text.isEmpty() || login_pass.text.isEmpty()) {
+    private fun btnLogin() {
+        if (loginEmail.text.isEmpty() || loginPass.text.isEmpty()) {
             Toast.makeText(requireContext(), "Enter both the fields", Toast.LENGTH_SHORT).show()
         } else {
-            val intent = Intent(activity, SidebarActivity::class.java)
+            val intent = Intent(activity, HomeActivity::class.java)
             startActivity(intent)
         }
     }

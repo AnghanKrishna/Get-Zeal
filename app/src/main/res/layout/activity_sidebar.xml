@@ -1,25 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llSideBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/my_drawer_layout"
-    tools:openDrawer="start">
+    android:background="@drawable/edit_btn"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
 
-    <include
-        layout="@layout/activity_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/ivclose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="start"
+        android:padding="10dp"
+        android:src="@drawable/clear" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navview"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:menu="@menu/navigation_menu" >
-<!--        remove nevigation menu file and include new custome xml-->
+    <TextView
+        android:id="@+id/tvAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/aboutus"
+        android:padding="10dp"
+        android:text="@string/aboutUs"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
-    </com.google.android.material.navigation.NavigationView>
+    <TextView
+        android:id="@+id/tvcCarrers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/carrer"
+        android:padding="10dp"
+        android:text="@string/carrers"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
-</androidx.drawerlayout.widget.DrawerLayout>
+    <TextView
+        android:id="@+id/tvbBlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/blog"
+        android:padding="10dp"
+        android:text="@string/blog"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvPartnerBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/partner"
+        android:padding="10dp"
+        android:text="@string/partnerBusiness"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/contactus"
+        android:padding="10dp"
+        android:text="@string/contactUs"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvContactSale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/contactus"
+        android:padding="10dp"
+        android:text="@string/contactSale"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>

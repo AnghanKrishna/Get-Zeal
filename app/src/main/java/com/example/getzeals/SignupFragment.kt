@@ -10,25 +10,18 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [signupFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 open class SignupFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
-    private lateinit var signup_fullnm: EditText
-    private lateinit var signup_email: EditText
-    private lateinit var signup_pass: EditText
-    private lateinit var btnsignup: Button
+    private lateinit var signupFullName: EditText
+    private lateinit var signupEmail: EditText
+    private lateinit var signupPass: EditText
+    private lateinit var btnSignUp: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,19 +37,19 @@ open class SignupFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_signup, container, false)
-        signup_fullnm = view.findViewById(R.id.signup_fullnm)
-        signup_email = view.findViewById(R.id.signup_email)
-        signup_pass = view.findViewById(R.id.signup_pass)
-        btnsignup = view.findViewById(R.id.btnsignup)
-        btnsignup.setOnClickListener { btnsignup() }
+        signupFullName = view.findViewById(R.id.signupFullName)
+        signupEmail = view.findViewById(R.id.signupEmail)
+        signupPass = view.findViewById(R.id.signupPass)
+        btnSignUp = view.findViewById(R.id.btnSignUp)
+        btnSignUp.setOnClickListener { btnSignUp() }
         return view
     }
 
-    private fun btnsignup() {
-        if (signup_fullnm.text.isEmpty() || signup_email.text.isEmpty() || signup_pass.text.isEmpty()) {
+    private fun btnSignUp() {
+        if (signupFullName.text.isEmpty() || signupEmail.text.isEmpty() || signupPass.text.isEmpty()) {
             Toast.makeText(requireContext(), "Enter all the fields", Toast.LENGTH_SHORT).show()
         } else {
-            val intent = Intent(activity, SidebarActivity::class.java)
+            val intent = Intent(activity, HomeActivity::class.java)
             startActivity(intent)
         }
     }

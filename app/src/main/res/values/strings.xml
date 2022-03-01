@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">GetZeals</string>
 
+<!--    login/signup content-->
     <string name="signup">Sign Up</string>
     <string name="signin">Sign In</string>
     <string name="facebook">Facebook</string>
+    <string name="apply">Apply</string>
+    <string name="fullname">Full Name</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="tv_create_acc">Or Create an Account with</string>
+    <string name="tvsignin">Or Sign In with</string>
 
     <!--    home nevigation-->
     <string name="sign_in">SIGN IN</string>
@@ -20,22 +26,5 @@
     <string name="email">Email Address</string>
     <string name="password">Password</string>
     <string name="filter">Filter</string>
-    <string name="fullname">Full Name</string>
-    <string name="remember_me">Remember Me</string>
-    <string name="tv_create_acc">Or Create an Account with</string>
-    <string name="tvsignin">Or Sign In with</string>
 
-<!--    filter-->
-    <string name="business_type">Business Type</string>
-    <string name="food_type">Food Type</string>
-    <string name="event_type">Event Type</string>
-    <string name="location">Location</string>
-    <string name="distance">Distance</string>
-
-<!--    filter more-->
-    <string name="bar">Bar / Lounge</string>
-    <string name="brewery">Brewery</string>
-    <string name="beer">Beer Garden</string>
-    <string name="liquor">Liquor Store</string>
 </resources>
-

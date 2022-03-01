@@ -28,12 +28,12 @@ class OfferAdapter(private val arraylist: List<OfferModel>) :
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bindItems(offer: OfferModel) {
 
-            val imgOffer = itemView.findViewById(R.id.offerImg) as ImageView
+            val imgOffer = itemView.findViewById(R.id.ivOffer) as ImageView
             val tvOfferadd = itemView.findViewById(R.id.tvOfferAddress) as TextView
             val tvOffername = itemView.findViewById(R.id.tvOfferName) as TextView
             imgOffer.setImageResource(offer.img)
-            tvOfferadd.text = offer.offeradd
-            tvOffername.text = offer.offername
+            tvOfferadd.text = offer.offerAdd
+            tvOffername.text = offer.offerName
         }
     }
 }

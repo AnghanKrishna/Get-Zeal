@@ -13,12 +13,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="50dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/toolbar">
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cvRestaurant"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
@@ -28,7 +27,7 @@
 
             <EditText
                 android:id="@+id/etRestaurant"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:drawableStart="@drawable/search"
                 android:gravity="center"
@@ -42,7 +41,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cvCity"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
@@ -52,7 +51,7 @@
 
             <EditText
                 android:id="@+id/etCity"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:drawableStart="@drawable/location_pink"
                 android:drawableEnd="@drawable/search_gray"

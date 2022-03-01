@@ -1,20 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal">
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/arrow_back"/>
+
+    <LinearLayout
+        android:id="@+id/llRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_below="@id/ivBack"
+        android:orientation="horizontal">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvFilter"
-            android:layout_width="wrap_content"
+            android:id="@+id/rvFilterList"
+            android:layout_width="150dp"
             android:layout_height="match_parent"
+            tools:itemCount="3"
             tools:listitem="@layout/filterlist" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvFilterDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/filtermore" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFilterDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="1"
+                tools:listitem="@layout/filtermore" />
+
+        </ScrollView>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnApply"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llRecyclerview"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/round_btn_orange"
+        android:text="@string/apply"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+</RelativeLayout>

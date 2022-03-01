@@ -1,9 +1,7 @@
 package com.example.getzeals
 
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,7 +11,7 @@ import kotlin.collections.ArrayList
 
 class HomeActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityHomeBinding
+    private lateinit var binding:ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,22 +19,14 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //change the status bar color
-        if (Build.VERSION.SDK_INT >= 21) {
-            val window = this.window
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-            window.statusBarColor = this.resources.getColor(R.color.pink)
-        }
-
         binding.ivMenu.setOnClickListener {
             binding.myDrawerLayout.openDrawer(GravityCompat.START)
         }
-        binding.navSideBar.ivclose.setOnClickListener {
+        binding.nvSideBar.ivclose.setOnClickListener {
             binding.myDrawerLayout.closeDrawer(GravityCompat.START)
         }
         binding.btnFilter.setOnClickListener {
-            var intent=Intent(this,FiltersActivity::class.java)
+            val intent=Intent(this,FiltersActivity::class.java)
             startActivity(intent)
         }
 

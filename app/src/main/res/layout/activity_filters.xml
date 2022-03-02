@@ -10,7 +10,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:padding="10dp"
-        android:src="@drawable/arrow_back"/>
+        android:src="@drawable/arrow_back_orange" />
 
     <LinearLayout
         android:id="@+id/llRecyclerview"
@@ -24,7 +24,7 @@
             android:layout_width="150dp"
             android:layout_height="match_parent"
             tools:itemCount="3"
-            tools:listitem="@layout/filterlist" />
+            tools:listitem="@layout/filter_list" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:itemCount="1"
-                tools:listitem="@layout/filtermore" />
+                tools:listitem="@layout/filter_more" />
 
         </ScrollView>
     </LinearLayout>
@@ -45,9 +45,9 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/llRecyclerview"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginStart="170dp"
         android:background="@drawable/round_btn_orange"
         android:text="@string/apply"
         android:textAlignment="center"

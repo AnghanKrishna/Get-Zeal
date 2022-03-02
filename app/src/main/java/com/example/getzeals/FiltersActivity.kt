@@ -71,15 +71,14 @@ class FiltersActivity : AppCompatActivity() {
         adapterList.setupListener(object : FilterAdapter.OnItemClicked {
             override fun itemClicked(position: Int) {
                 val posi = filter[position]
-//                Log.i(TAG, " position $posi")
 
 //                set true if item is clicked
                 filter.forEachIndexed { index, filterModel ->
                     filterModel.isClicked = index == position
                 }
                 adapterList.updateFilter(filter)
-
                 filtermore.clear()  //clear the old data in rv and new data loaded
+
                 when (posi.filterName) {
                     "Business Type" -> {
                         filtermore.add(FilterMoreModel("Bar / Lounge"))
@@ -164,5 +163,10 @@ class FiltersActivity : AppCompatActivity() {
             }
         })
 
+    }
+
+    override fun onBackPressed() {
+        val intent=Intent(this,HomeActivity::class.java)
+        startActivity(intent)
     }
 }

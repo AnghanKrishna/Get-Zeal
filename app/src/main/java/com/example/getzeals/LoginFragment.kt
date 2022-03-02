@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
+
 open class LoginFragment : Fragment() {
 
     // TODO: Rename and change types of parameters

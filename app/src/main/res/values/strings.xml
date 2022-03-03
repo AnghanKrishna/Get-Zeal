@@ -27,8 +27,10 @@
     <string name="password">Password</string>
     <string name="filter">Filter</string>
 
-<!--    offer detail-->
+    <!--    offer detail-->
+    <string name="mission">Mission Ale House</string>
     <string name="offerdetail">Offer is to put forth or suggest for consideration, acceptance or rejection.\nAn example of offer is to make a bid on a house. ..\nAn example of offer is the act of putting in a bid on a house. An example of offer is the suggested sum of $30 per hour for tutoring.</string>
+    <string name="spinstruction">Special Instruction</string>
     <string name="specialIns">An offer is a conditional proposal made by a buyer or seller to buy or sell an asset, which becomes legally binding if accepted. An offer is also defined as the act of offering something for sale, or the submission of a bid to buy something.</string>
     <string name="sharezeal">Share this Zeal</string>
     <string name="whatarezeal">What are Zeals</string>
@@ -44,5 +46,9 @@
     <string name="visit">Visit and Save</string>
     <string name="visit1">Use your registered credit cards at our merchants and get cash back to you credit card statement</string>
     <string name="claim">Claim Reward</string>
+    <string name="info">INFO</string>
+    <string name="mi">7Mi</string>
+    <string name="freeclaim">Free To Claim</string>
+    <string name="aboutkfc">About KFC</string>
 
 </resources>

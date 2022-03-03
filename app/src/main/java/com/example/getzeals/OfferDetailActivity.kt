@@ -20,8 +20,5 @@ class OfferDetailActivity : AppCompatActivity() {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
-
-//        get data from OfferAdapter
-        binding.tvTitle.text = intent.getStringExtra("name")
     }
 }

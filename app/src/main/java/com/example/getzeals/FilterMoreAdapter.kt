@@ -38,9 +38,7 @@ class FilterMoreAdapter :
         fun bindItems(filtermore: FilterMoreModel) {
 
             val tvFilterMore = itemView.findViewById(R.id.tvFilterMore) as TextView
-//            val cbFilter = itemView.findViewById(R.id.cbFilter) as CheckBox
             tvFilterMore.text = filtermore.filterDetail
-//            cbFilter.isChecked
         }
     }
 }

@@ -11,6 +11,9 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/pink</item>
+
         <!-- Customize your theme here. -->
+<!--        to add back button in collapsing toolbar-->
+        <item name="windowNoTitle">true</item>
     </style>
 </resources>

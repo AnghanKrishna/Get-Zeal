@@ -1,9 +1,7 @@
 package com.example.getzeals
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -77,6 +75,5 @@ class HomeActivity : AppCompatActivity() {
     //      will close the app
     override fun onBackPressed() {
         moveTaskToBack(true)
-//        super.onBackPressed()
     }
 }

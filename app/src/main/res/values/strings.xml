@@ -2,17 +2,16 @@
     <string name="app_name">GetZeals</string>
 
     <!--    login/signup content-->
-    <string name="signup">Sign Up</string>
-    <string name="signin">Sign In</string>
-    <string name="facebook">Facebook</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signIn">Sign In</string>
+    <string name="faceBook">Facebook</string>
     <string name="apply">Apply</string>
-    <string name="fullname">Full Name</string>
-    <string name="remember_me">Remember Me</string>
-    <string name="tv_create_acc">Or Create an Account with</string>
+    <string name="fullName">Full Name</string>
+    <string name="rememberMe">Remember Me</string>
+    <string name="tvCreateAcc">Or Create an Account with</string>
     <string name="tvsignin">Or Sign In with</string>
 
     <!--    home nevigation-->
-    <string name="sign_in">SIGN IN</string>
     <string name="aboutUs">ABOUT US</string>
     <string name="carrers">CARRERS</string>
     <string name="blog">BLOG</string>
@@ -21,7 +20,7 @@
     <string name="contactSale">CONTACT SALES</string>
 
     <!--    home content-->
-    <string name="restaurant">Restaurant, Brewery, Cafe</string>
+    <string name="restaurant">Restaurant, Cafe</string>
     <string name="cityZip">City/Zip</string>
     <string name="email">Email Address</string>
     <string name="password">Password</string>
@@ -29,15 +28,15 @@
 
     <!--    offer detail-->
     <string name="mission">Mission Ale House</string>
-    <string name="offerdetail">Offer is to put forth or suggest for consideration, acceptance or rejection.\nAn example of offer is to make a bid on a house. ..\nAn example of offer is the act of putting in a bid on a house. An example of offer is the suggested sum of $30 per hour for tutoring.</string>
-    <string name="spinstruction">Special Instruction</string>
+    <string name="offerDetail">Offer is to put forth or suggest for consideration, acceptance or rejection.\nAn example of offer is to make a bid on a house. ..\nAn example of offer is the act of putting in a bid on a house. An example of offer is the suggested sum of $30 per hour for tutoring.</string>
+    <string name="spInstruction">Special Instruction</string>
     <string name="specialIns">An offer is a conditional proposal made by a buyer or seller to buy or sell an asset, which becomes legally binding if accepted. An offer is also defined as the act of offering something for sale, or the submission of a bid to buy something.</string>
-    <string name="sharezeal">Share this Zeal</string>
-    <string name="whatarezeal">What are Zeals</string>
+    <string name="shareZeal">Share this Zeal</string>
+    <string name="whatAreZeal">What are Zeals</string>
     <string name="discount">Discount Rewards from your favorite businesses</string>
     <string name="voucher">No voucher needed. \nDiscounts are rebates credited to your card statement</string>
     <string name="future">Up to 10% back on future purchases at the business</string>
-    <string name="zealwork">How Zeals Work</string>
+    <string name="zealWork">How Zeals Work</string>
     <string name="way">Easy As 1 2 3</string>
     <string name="join">Join for Free</string>
     <string name="join1">Enroll your eligible credit cards to get cash back at all participating merchants</string>
@@ -46,9 +45,9 @@
     <string name="visit">Visit and Save</string>
     <string name="visit1">Use your registered credit cards at our merchants and get cash back to you credit card statement</string>
     <string name="claim">Claim Reward</string>
-    <string name="info">INFO</string>
+    <string name="info">Info</string>
     <string name="mi">7Mi</string>
-    <string name="freeclaim">Free To Claim</string>
-    <string name="aboutkfc">About KFC</string>
+    <string name="freeClaim">Free To Claim</string>
+    <string name="aboutKfc">About KFC</string>
 
 </resources>

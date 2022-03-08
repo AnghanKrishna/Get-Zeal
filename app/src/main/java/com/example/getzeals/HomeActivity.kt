@@ -27,9 +27,14 @@ class HomeActivity : AppCompatActivity() {
             binding.myDrawerLayout.closeDrawer(GravityCompat.START)
         }
 
+        binding.nvSideBar.tvPartnerBusiness.setOnClickListener {
+            val intentPartner=Intent(this,BusinessPartnerActivity::class.java)
+            startActivity(intentPartner)
+        }
+
         binding.btnFilter.setOnClickListener {
-            val intent = Intent(this, FiltersActivity::class.java)
-            startActivity(intent)
+            val intentFilter = Intent(this, FiltersActivity::class.java)
+            startActivity(intentFilter)
         }
 
 //        add new details to recyclerview and set the same in Adapter on viewHolder()
@@ -63,7 +68,7 @@ class HomeActivity : AppCompatActivity() {
                     filterModel.isClicked = index == position
                 }
 
-                if (posi.img == 2131165287 || posi.img == 2131165288 || posi.img == 2131165289 || posi.img == 2131165290 || posi.img == 2131165291) {
+                if (posi.img == 2131165287 || posi.img == 2131165288 || posi.img == 2131165289) {
                     val offerDetail = Intent(this@HomeActivity, OfferDetailActivity::class.java)
                     startActivity(offerDetail)
                 }

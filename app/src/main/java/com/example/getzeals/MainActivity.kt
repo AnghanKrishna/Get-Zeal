@@ -24,21 +24,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    //calling fragment in cardview
+    //calling fragment in cardView
     private fun loginFragment() {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        val loginfrag = LoginFragment()
-        fragmentTransaction.add(R.id.flMain, loginfrag)
+        val loginFrag = LoginFragment()
+        fragmentTransaction.add(R.id.flMain, loginFrag)
         fragmentTransaction.commit()
     }
 
-    //calling fragment in cardview
+    //calling fragment in cardView
     private fun signupFragment() {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        val signupfrag = SignupFragment()
-        fragmentTransaction.add(R.id.flMain, signupfrag)
+        val signupFrag = SignupFragment()
+        fragmentTransaction.add(R.id.flMain, signupFrag)
         fragmentTransaction.commit()
     }
 }

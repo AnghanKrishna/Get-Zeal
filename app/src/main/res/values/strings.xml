@@ -11,13 +11,13 @@
     <string name="tvCreateAcc">Or Create an Account with</string>
     <string name="tvsignin">Or Sign In with</string>
 
-    <!--    home nevigation-->
-    <string name="aboutUs">ABOUT US</string>
-    <string name="carrers">CARRERS</string>
-    <string name="blog">BLOG</string>
-    <string name="partnerBusiness">BE A PARTNER BUSINESS</string>
-    <string name="contactUs">CONTACT US</string>
-    <string name="contactSale">CONTACT SALES</string>
+    <!--    side nevigation-->
+    <string name="aboutUs">About Us</string>
+    <string name="carrers">Careers</string>
+    <string name="blog">Blog</string>
+    <string name="partnerBusiness">Be A Partner Business</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="contactSale">Contact Sales</string>
 
     <!--    home content-->
     <string name="restaurant">Restaurant, Cafe</string>
@@ -51,7 +51,16 @@
     <string name="aboutDiscount"><u>About KFC</u></string>
     <string name="aboutKfc">About KFC</string>
 
-<!--    partner account-->
+    <!--    partner account-->
     <string name="partner">I already have an Partner Account</string>
+    <string name="partnerSignUp">Sign Up As A GetZeals Business Partner!!</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="termAndCondition">By Clicking below I agree with the <a href="">Terms of Service</a> and I have read and understand the <a href="">Privacy Policy</a>.</string>
+    <string name="help">Help</string>
+    <string name="becomePartner">Become a GetZeals Partner</string>
+    <string name="makeZeal">Let\'s make some Zeals!</string>
+    <string name="forgetPass">Forgot Password</string>
+    <string name="noAccount">Don\'t have an account,\nbecome a Partner</string>
 
 </resources>

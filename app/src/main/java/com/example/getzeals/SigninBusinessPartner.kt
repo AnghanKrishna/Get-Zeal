@@ -4,19 +4,24 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.getzeals.databinding.ActivityBusinessPartnerBinding
+import com.example.getzeals.databinding.ActivitySigninBusinessPartnerBinding
 
-class BusinessPartnerActivity : AppCompatActivity() {
+class SigninBusinessPartner : AppCompatActivity() {
 
-    private lateinit var binding: ActivityBusinessPartnerBinding
+    private lateinit var binding: ActivitySigninBusinessPartnerBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityBusinessPartnerBinding.inflate(layoutInflater)
+        binding = ActivitySigninBusinessPartnerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.tvSignupPartner.setOnClickListener {
+            val intentSignup= Intent(this,BusinessPartnerActivity::class.java)
+            startActivity(intentSignup)
+        }
+
         binding.tvSigninPartner.setOnClickListener {
-            val intentSignin = Intent(this, SigninBusinessPartner::class.java)
+            val intentSignin= Intent(this,BusinessPartnerActivity::class.java)
             startActivity(intentSignin)
         }
 
@@ -26,7 +31,7 @@ class BusinessPartnerActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val intentBack= Intent(this,HomeActivity::class.java)
+        val intentBack= Intent(this,BusinessPartnerActivity::class.java)
         startActivity(intentBack)
     }
 }

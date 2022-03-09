@@ -173,7 +173,7 @@
                     android:id="@+id/ivInfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/info" />
+                    android:src="@drawable/info_pink" />
 
                 <TextView
                     android:id="@+id/tvInfo"
@@ -199,13 +199,15 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/question_mark" />
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/question_pink" />
 
                 <TextView
                     android:id="@+id/tvWhatAreZeal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
+                    android:textAlignment="center"
                     android:text="@string/whatAreZeal"
                     android:textColor="@color/pink"
                     android:textSize="14sp"
@@ -225,14 +227,15 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
                     android:src="@drawable/zeal_work" />
 
                 <TextView
                     android:id="@+id/tvZealWork"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:padding="5dp"
+                    android:textAlignment="center"
                     android:text="@string/zealWork"
                     android:textColor="@color/pink"
                     android:textSize="14sp"
@@ -256,30 +259,35 @@
                 android:textSize="18sp" />
 
             <ImageView
+                android:id="@+id/ivMail"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="40sp"
                 android:src="@drawable/mail" />
 
             <ImageView
+                android:id="@+id/ivFacebook"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="10sp"
                 android:src="@drawable/facebook" />
 
             <ImageView
+                android:id="@+id/ivTwitter"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="10sp"
                 android:src="@drawable/twitter" />
 
             <ImageView
+                android:id="@+id/ivPinterest"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="10sp"
                 android:src="@drawable/pinterest" />
 
             <ImageView
+                android:id="@+id/ivInstagram"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="10sp"

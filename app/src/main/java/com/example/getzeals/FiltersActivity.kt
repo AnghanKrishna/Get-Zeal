@@ -166,7 +166,7 @@ class FiltersActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val intent=Intent(this,HomeActivity::class.java)
-        startActivity(intent)
+        val intentBack=Intent(this,HomeActivity::class.java)
+        startActivity(intentBack)
     }
 }

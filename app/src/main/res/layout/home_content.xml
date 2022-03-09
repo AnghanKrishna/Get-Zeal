@@ -23,21 +23,23 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
             app:cardCornerRadius="10dp">
 
             <EditText
                 android:id="@+id/etRestaurant"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:drawableStart="@drawable/search"
                 android:drawablePadding="5dp"
-                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginStart="10dp"
                 android:background="@color/white"
                 android:hint="@string/restaurant"
-                android:importantForAutofill="no"
                 android:inputType="text"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:importantForAutofill="no" />
 
         </androidx.cardview.widget.CardView>
 
@@ -45,10 +47,10 @@
             android:id="@+id/cvCity"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
             app:cardCornerRadius="10dp">
 
             <EditText
@@ -58,14 +60,13 @@
                 android:drawableStart="@drawable/location_pink"
                 android:drawablePadding="5dp"
                 android:drawableEnd="@drawable/search_gray"
-                android:gravity="center"
+                android:textAlignment="center"
                 android:background="@color/white"
-
                 android:hint="@string/cityZip"
-                android:importantForAutofill="no"
                 android:inputType="text"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:importantForAutofill="no" />
 
         </androidx.cardview.widget.CardView>
 

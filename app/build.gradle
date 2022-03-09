@@ -50,7 +50,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 //    nevigation drawer
-    implementation 'com.google.android.material:material:1.6.0-alpha02'
+    implementation 'com.google.android.material:material:1.6.0-alpha03'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
 
@@ -64,4 +64,5 @@ dependencies {
 //    collapsing toolbar
 //    implementation 'com.google.android.material:material:1.6.0-alpha02'
 //    implementation 'androidx.appcompat:appcompat:1.4.1'
+
 }

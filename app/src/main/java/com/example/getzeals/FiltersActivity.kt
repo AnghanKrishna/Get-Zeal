@@ -30,11 +30,11 @@ class FiltersActivity : AppCompatActivity() {
 //      add new details to recyclerview1 and set the same in Adapter on viewHolder()
         binding.rvFilterList.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         val filter = ArrayList<FilterModel>()
-        filter.add(FilterModel("Business Type", true))
-        filter.add(FilterModel("Food Type", false))
-        filter.add(FilterModel("Event Type", false))
-        filter.add(FilterModel("Location", false))
-        filter.add(FilterModel("Distance", false))
+        filter.add(FilterModel(R.drawable.filter_btype,"Business Type", true))
+        filter.add(FilterModel(R.drawable.filter_food,"Food Type", false))
+        filter.add(FilterModel(R.drawable.filter_event,"Event Type", false))
+        filter.add(FilterModel(R.drawable.filter_location,"Location", false))
+        filter.add(FilterModel(R.drawable.filter_distance,"Distance", false))
         val adapterList = FilterAdapter()
         binding.rvFilterList.adapter = adapterList
 

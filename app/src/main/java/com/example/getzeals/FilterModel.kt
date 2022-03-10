@@ -1,6 +1,6 @@
 package com.example.getzeals
 
-data class FilterModel(val filterName: String, var isClicked: Boolean)
+data class FilterModel(val img: Int,val filterName: String, var isClicked: Boolean)
 
 data class FilterMoreModel(val filterDetail: String)
 

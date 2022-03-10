@@ -12,6 +12,7 @@
             android:id="@+id/llBusinessType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
             android:orientation="vertical">
 
             <LinearLayout
@@ -24,19 +25,20 @@
                     android:id="@+id/cbFilter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@color/black"
-                    android:layout_marginTop="20dp" />
+                    android:buttonTint="@color/black" />
 
                 <TextView
                     android:id="@+id/tvFilterMore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
+
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
         </LinearLayout>
+
     </ScrollView>
+
 </androidx.cardview.widget.CardView>

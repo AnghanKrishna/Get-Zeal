@@ -14,6 +14,7 @@
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable-v24/user_green.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/aboutus.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/arrow_back.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/arrow_back_orange.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/arrow_back_pink.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/arrow_right.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/background_card.xml" value="0.1" />
@@ -30,6 +31,7 @@
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/carrer.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/circle.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/clear.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/contactsale.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/contactus.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/custom_btn.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/custom_card.xml" value="0.1" />
@@ -38,12 +40,15 @@
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/edit_btn.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/edittext_border.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/edittext_round.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/filter_list.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/giftcard.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/ic_baseline_business_center_24.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/ic_baseline_kebab_dining_24.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/info.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/info_black.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/info_gray.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/info_pink.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/key_black.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/key_green.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/list_numbered.xml" value="0.1" />
@@ -56,7 +61,9 @@
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/mail_outline_gray.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/mail_outline_green.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/menu.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/question_black.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/question_mark.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/question_pink.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/question_white.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/round_btn_blue.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/round_btn_light_green.xml" value="0.1" />
@@ -65,25 +72,27 @@
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/round_btn_white.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/search.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/search_gray.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/share_app.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/style.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/user_gray.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/username.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/zeal1.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/zeal_work.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/drawable/zeal_work_gray.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout-v21/work_of_zeals.xml" value="0.23645833333333333" />
-        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/about_zeals.xml" value="0.12" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/about_zeals.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_business_partner.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_collapsing_toolbar_layout.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_detail_offer.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_drawer.xml" value="0.14" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_drawerlayout.xml" value="0.15" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_filters.xml" value="0.1" />
-        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_home.xml" value="0.12" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_home2.xml" value="0.2" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_home_content.xml" value="0.12" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_main2.xml" value="0.171875" />
-        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_offer_detail.xml" value="0.12" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_offer_detail.xml" value="0.11" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_sidebar.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_sidebar1.xml" value="0.12" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
@@ -92,7 +101,8 @@
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/backup_offerdetailpage.xml" value="0.13" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/cardlist.xml" value="0.14" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/copy.xml" value="0.1" />
-        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/filter_list.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/filter_list.xml" value="0.11" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/filter_list_emp.xml" value="0.14" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/filter_more.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/filterlist.xml" value="0.12" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/filtermore.xml" value="0.12" />
@@ -107,9 +117,11 @@
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/logindailog_layout.xml" value="0.16" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/navigation.xml" value="0.25" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/offer_list.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/offer_list_emp.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/offerlist.xml" value="0.1" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/row_nav_drawer.xml" value="0.21" />
-        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/sidebar_nav.xml" value="0.13" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/share_zeal.xml" value="0.1" />
+        <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/sidebar_nav.xml" value="0.12" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/signin_business_partner.xml" value="0.14" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/signupdailog_layout.xml" value="0.16" />
         <entry key="..\:/documents/android/GetZeals/app/src/main/res/layout/toolbar.xml" value="0.14" />

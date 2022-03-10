@@ -5,6 +5,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -37,12 +38,14 @@ class FilterAdapter :
 
             val tvFilter = itemView.findViewById(R.id.tvFilter) as TextView
             val cvFilter = itemView.findViewById(R.id.cvFilter) as CardView
+            val ivFilter = itemView.findViewById(R.id.ivFilter) as ImageView
             tvFilter.text = filter.filterName
+            ivFilter.setImageResource(filter.img)
 
 //          set bgcolor of selected card at runtime
             cvFilter.setBackgroundResource(
                 if (filter.isClicked)
-                    R.drawable.bg_card_pink
+                    R.drawable.bg_card_gray
                 else
                     R.drawable.bg_card_white
             )
@@ -50,6 +53,13 @@ class FilterAdapter :
             tvFilter.setOnClickListener {
                 listener.itemClicked(position)
             }
+            ivFilter.setOnClickListener {
+                listener.itemClicked(position)
+            }
+            cvFilter.setOnClickListener {
+                listener.itemClicked(position)
+            }
+
         }
     }
 

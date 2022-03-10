@@ -5,18 +5,38 @@
     android:layout_height="match_parent"
     tools:ignore="ContentDescription">
 
-    <ImageView
-        android:id="@+id/ivBack"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:padding="10dp"
-        android:src="@drawable/arrow_back_orange" />
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/pink"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/arrow_back_orange" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Filters"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llRecyclerview"
         android:layout_width="match_parent"
         android:layout_height="630dp"
-        android:layout_below="@id/ivBack"
+        android:layout_below="@id/llHeader"
         android:orientation="horizontal">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -42,13 +62,11 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnApply"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/llRecyclerview"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/round_btn_orange"
+        android:layout_margin="10dp"
+        android:background="@color/orange"
         android:text="@string/apply"
         android:textAlignment="center"
         android:textAllCaps="true"

@@ -26,6 +26,9 @@
     <string name="password">Password</string>
     <string name="filter">Filter</string>
 
+    <!--    filter content-->
+    <string name="filteringBy">Filtering By</string>
+
     <!--    offer detail-->
     <string name="mission">Mission Ale House</string>
     <string name="offerDetail">Offer is to put forth or suggest for consideration, acceptance or rejection.\nAn example of offer is to make a bid on a house. ..\nAn example of offer is the act of putting in a bid on a house. An example of offer is the suggested sum of $30 per hour for tutoring.</string>
@@ -37,7 +40,7 @@
     <string name="voucher">No voucher needed. \nDiscounts are rebates credited to your card statement</string>
     <string name="future">Up to 10% back on future purchases at the business</string>
     <string name="zealWork"><i>How Zeals Work</i></string>
-    <string name="way"><u>Easy As <b>1   2   3</b></u></string>
+    <string name="way">Easy As <b>1   2   3</b></string>
     <string name="join"><u>Join for Free</u></string>
     <string name="join1">Enroll your eligible credit cards to get cash back at all participating merchants</string>
     <string name="register"><u>Register for Zeals</u></string>
@@ -64,3 +67,4 @@
     <string name="noAccount">Don\'t have an account,\nbecome a Partner</string>
 
 </resources>
+

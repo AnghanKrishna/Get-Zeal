@@ -4,8 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.getzeals.databinding.ActivityHomeBinding
 import kotlin.collections.ArrayList
 
@@ -28,7 +27,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         binding.nvSideBar.tvPartnerBusiness.setOnClickListener {
-            val intentPartner=Intent(this,BusinessPartnerActivity::class.java)
+            val intentPartner = Intent(this, BusinessPartnerActivity::class.java)
             startActivity(intentPartner)
         }
 
@@ -39,9 +38,9 @@ class HomeActivity : AppCompatActivity() {
 
 //        add new details to recyclerview and set the same in Adapter on viewHolder()
         binding.llHomeContent.rvCard.layoutManager =
-            LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+            GridLayoutManager(this, 2)
         val card = ArrayList<OfferModel>()
-        card.add(OfferModel(R.drawable.card1, "Miami, FL, USA", "KFC", true))
+        card.add(OfferModel(R.drawable.card1, "Miami, FL, \nUSA", "KFC", true))
         card.add(
             OfferModel(
                 R.drawable.card2,
@@ -50,12 +49,18 @@ class HomeActivity : AppCompatActivity() {
                 true
             )
         )
-        card.add(OfferModel(R.drawable.card3, "Miami, FL, USA", "Starbucks Offer", true))
-        card.add(OfferModel(R.drawable.card4, "Miami, FL, USA", "Get An Exciting 45%", true))
-        card.add(OfferModel(R.drawable.card5, "Miami, FL, USA", "Test New Offer", true))
+        card.add(OfferModel(R.drawable.card3, "KFC, \nTouchstone", "Starbucks Offer", true))
+        card.add(
+            OfferModel(
+                R.drawable.card4,
+                "Mission Brewing \nCompany ",
+                "Get An Exciting 45%",
+                true
+            )
+        )
+        card.add(OfferModel(R.drawable.card5, "Miami, FL, \nUSA", "Test New Offer", true))
         val adapter = OfferAdapter(card)
         binding.llHomeContent.rvCard.adapter = adapter
-
 
 //        list cardView click listener
         adapter.setupListener(object : OfferAdapter.OnItemClicked {
@@ -68,7 +73,7 @@ class HomeActivity : AppCompatActivity() {
                     filterModel.isClicked = index == position
                 }
 
-                if (posi.img == 2131165287 || posi.img == 2131165288 || posi.img == 2131165289) {
+                if (posi.img == 2131165290 || posi.img == 2131165291 || posi.img == 2131165292 || posi.img == 2131165293 || posi.img == 2131165294) {
                     val offerDetail = Intent(this@HomeActivity, OfferDetailActivity::class.java)
                     startActivity(offerDetail)
                 }
@@ -77,7 +82,7 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
-    //      will close the app
+//          will close the app
     override fun onBackPressed() {
         moveTaskToBack(true)
     }

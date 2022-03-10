@@ -26,9 +26,10 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/user_gray"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/user_gray"
+            tools:ignore="ImageContrastCheck" />
         <TextView
             android:id="@+id/tvAboutUs"
             android:layout_width="match_parent"
@@ -37,6 +38,7 @@
             android:padding="10dp"
             android:text="@string/aboutUs"
             android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -68,6 +70,7 @@
             android:padding="10dp"
             android:text="@string/carrers"
             android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -100,6 +103,7 @@
             android:padding="10dp"
             android:text="@string/blog"
             android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -132,6 +136,7 @@
             android:padding="10dp"
             android:text="@string/partnerBusiness"
             android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -164,6 +169,7 @@
             android:padding="10dp"
             android:text="@string/contactUs"
             android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -184,7 +190,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/contactus"
+            android:src="@drawable/contactsale"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"/>
 
@@ -196,6 +202,7 @@
             android:padding="10dp"
             android:text="@string/contactSale"
             android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -206,4 +213,6 @@
         android:layout_margin="10dp"
         android:background="@color/gray"
         android:padding="50dp" />
+
 </LinearLayout>
+

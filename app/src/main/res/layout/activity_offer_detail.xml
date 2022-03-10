@@ -67,50 +67,55 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-<!--        header linearlayout-->
+            <!--        header linearlayout-->
             <LinearLayout
                 android:id="@+id/llHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
                 android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tvMiles"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:drawablePadding="5dp"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="@string/mi"
-                    android:textColor="@color/pink"
-                    android:textSize="20sp"
-                    app:drawableStartCompat="@drawable/location_on_" />
 
                 <TextView
                     android:id="@+id/tvClaim"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:gravity="center_vertical"
+                    android:fontFamily="sans-serif-condensed-medium"
                     android:padding="5dp"
-                    android:text="@string/freeClaim"
+                    android:text="Miami, FL, USA"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvMiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="@string/mi"
+                    android:textColor="@color/pink"
+                    android:textSize="15sp"
+                    app:drawableStartCompat="@drawable/location_on_" />
 
                 <Button
                     android:id="@+id/btnReward"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right|center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:backgroundTint="@color/pink_light"
                     android:drawableLeft="@drawable/giftcard"
+                    android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/claim"
                     android:textAllCaps="false"
-                    android:textSize="10sp" />
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share_app" />
 
             </LinearLayout>
 
@@ -125,7 +130,7 @@
 
                     <include
                         android:id="@+id/inZeal"
-                        layout="@layout/about_zeals"
+                        layout="@layout/offer_detail_content"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -137,18 +142,20 @@
 
     </RelativeLayout>
 
-<!--footer linerLayout-->
+    <!--footer linerLayout-->
     <LinearLayout
         android:id="@+id/llFooter"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="650dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="675dp"
         android:background="@drawable/bg_card_white"
         android:orientation="vertical">
 
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:background="@color/pink_light"
             android:padding="50dp" />
 
@@ -156,6 +163,7 @@
             android:id="@+id/llBottomNav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -163,17 +171,18 @@
                 android:id="@+id/llInfo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:textAlignment="center">
 
                 <ImageView
                     android:id="@+id/ivInfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/info_pink" />
+                    android:src="@drawable/info_gray" />
 
                 <TextView
                     android:id="@+id/tvInfo"
@@ -181,117 +190,67 @@
                     android:layout_height="wrap_content"
                     android:padding="5dp"
                     android:text="@string/info"
-                    android:textColor="@color/pink"
+                    android:textColor="@color/gray"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/llWhatIsZeal"
+                android:id="@+id/llWhatAreZeal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:textAlignment="center"
-                android:gravity="center"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:textAlignment="center">
 
                 <ImageView
+                    android:id="@+id/ivWhatAreZeal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/question_pink" />
+                    android:src="@drawable/question_black" />
 
                 <TextView
                     android:id="@+id/tvWhatAreZeal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:textAlignment="center"
                     android:text="@string/whatAreZeal"
-                    android:textColor="@color/pink"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/llWork"
+                android:id="@+id/llZealWork"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
+                android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textAlignment="center"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:textAlignment="center">
 
                 <ImageView
+                    android:id="@+id/ivZealWork"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/zeal_work" />
+                    android:src="@drawable/zeal_work_gray" />
 
                 <TextView
                     android:id="@+id/tvZealWork"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:textAlignment="center"
                     android:text="@string/zealWork"
-                    android:textColor="@color/pink"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/llShareZeal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/shareZeal"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:id="@+id/ivMail"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="40sp"
-                android:src="@drawable/mail" />
-
-            <ImageView
-                android:id="@+id/ivFacebook"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10sp"
-                android:src="@drawable/facebook" />
-
-            <ImageView
-                android:id="@+id/ivTwitter"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10sp"
-                android:src="@drawable/twitter" />
-
-            <ImageView
-                android:id="@+id/ivPinterest"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10sp"
-                android:src="@drawable/pinterest" />
-
-            <ImageView
-                android:id="@+id/ivInstagram"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10sp"
-                android:src="@drawable/instagram" />
 
         </LinearLayout>
 

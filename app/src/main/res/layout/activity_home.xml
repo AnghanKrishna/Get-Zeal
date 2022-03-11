@@ -50,8 +50,6 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
                     android:background="@drawable/edit_btn"
-                    android:drawableStart="@drawable/filter_list"
-                    android:drawablePadding="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/filter"
                     android:textAlignment="center"

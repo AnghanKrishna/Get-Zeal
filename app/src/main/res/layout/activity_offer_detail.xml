@@ -73,48 +73,72 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tvClaim"
+                    android:id="@+id/tvOfferPlace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:padding="5dp"
+                    android:layout_marginLeft="10dp"
                     android:text="Miami, FL, USA"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location_on"
+                    android:layout_marginLeft="5dp"/>
 
                 <TextView
                     android:id="@+id/tvMiles"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:drawablePadding="5dp"
                     android:padding="5dp"
                     android:text="@string/mi"
                     android:textColor="@color/pink"
-                    android:textSize="15sp"
-                    app:drawableStartCompat="@drawable/location_on_" />
+                    android:textSize="15sp" />
 
-                <Button
-                    android:id="@+id/btnReward"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:backgroundTint="@color/pink_light"
-                    android:drawableLeft="@drawable/giftcard"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/claim"
-                    android:textAllCaps="false"
-                    android:textSize="12sp" />
+                <LinearLayout
+                    android:id="@+id/llGetReward"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_card_pink_light"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/giftcard"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="@string/claim"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="5dp"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
 
                 <ImageView
                     android:id="@+id/ivShare"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
                     android:src="@drawable/share_app" />
 
             </LinearLayout>
@@ -182,7 +206,7 @@
                     android:id="@+id/ivInfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/info_gray" />
+                    android:src="@drawable/info_footer" />
 
                 <TextView
                     android:id="@+id/tvInfo"

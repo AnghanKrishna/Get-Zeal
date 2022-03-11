@@ -16,12 +16,12 @@ class SigninBusinessPartner : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.tvSignupPartner.setOnClickListener {
-            val intentSignup= Intent(this,BusinessPartnerActivity::class.java)
+            val intentSignup= Intent(this,SignupBusinessPartner::class.java)
             startActivity(intentSignup)
         }
 
         binding.tvSigninPartner.setOnClickListener {
-            val intentSignin= Intent(this,BusinessPartnerActivity::class.java)
+            val intentSignin= Intent(this,SignupBusinessPartner::class.java)
             startActivity(intentSignin)
         }
 
@@ -31,7 +31,7 @@ class SigninBusinessPartner : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val intentBack= Intent(this,BusinessPartnerActivity::class.java)
+        val intentBack= Intent(this,SignupBusinessPartner::class.java)
         startActivity(intentBack)
     }
 }

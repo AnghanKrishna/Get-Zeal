@@ -108,7 +108,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/round_btn_blue"
-                android:text="@string/faceBook"
+                android:text="@string/facebook"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/white" />

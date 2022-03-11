@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.getzeals.databinding.ActivityHomeBinding
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlin.collections.ArrayList
 
 class HomeActivity : AppCompatActivity() {
@@ -26,8 +27,13 @@ class HomeActivity : AppCompatActivity() {
             binding.myDrawerLayout.closeDrawer(GravityCompat.START)
         }
 
+        binding.nvSideBar.tvProfile.setOnClickListener {
+            val intentProfile = Intent(this, SidebarProfileActivity::class.java)
+            startActivity(intentProfile)
+        }
+
         binding.nvSideBar.tvPartnerBusiness.setOnClickListener {
-            val intentPartner = Intent(this, BusinessPartnerActivity::class.java)
+            val intentPartner = Intent(this, SignupBusinessPartner::class.java)
             startActivity(intentPartner)
         }
 

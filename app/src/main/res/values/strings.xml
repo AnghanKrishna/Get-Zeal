@@ -4,7 +4,6 @@
     <!--    login/signup content-->
     <string name="signUp">Sign Up</string>
     <string name="signIn">Sign In</string>
-    <string name="faceBook">Facebook</string>
     <string name="apply">Apply</string>
     <string name="fullName">Full Name</string>
     <string name="rememberMe">Remember Me</string>
@@ -12,6 +11,7 @@
     <string name="tvsignin">Or Sign In with</string>
 
     <!--    side nevigation-->
+    <string name="profile">Profile</string>
     <string name="aboutUs">About Us</string>
     <string name="carrers">Careers</string>
     <string name="blog">Blog</string>
@@ -66,5 +66,31 @@
     <string name="forgetPass">Forgot Password</string>
     <string name="noAccount">Don\'t have an account,\nbecome a Partner</string>
 
+    <!--    share zeal to social media-->
+    <string name="mail">Mail</string>
+    <string name="facebook">Facebook</string>
+    <string name="pin">Pinterest</string>
+    <string name="twit">Twitter</string>
+    <string name="insta">Instagram</string>
+    <string name="share">Share Zeal through</string>
+
+    <!--    sidebar profile-->
+    <string name="myZeal">My Zeals</string>
+    <string name="userprofile">My Profile</string>
+    <string name="account">Account</string>
+    <string name="earning">Earnings</string>
+    <string name="bankAccount">Bank Account</string>
+
+    <!--    user account-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cashReward">Cash Reward Earned</string>
+    <string name="viewTransaction">View Transaction</string>
+    <string name="transferToBank">Tranfer To Bank</string>
+    <string name="balance">Balance</string>
+    <string name="linkBank">Link Bank</string>
+    <string name="btnAddUpdate">Add/Update Bank</string>
+    <string name="linkBankDetail">We keep your financial details \n secure so no one sees your \n sensitive info</string>
+
 </resources>
+
 

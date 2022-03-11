@@ -28,17 +28,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/user_gray"
+            android:src="@drawable/profile"
             tools:ignore="ImageContrastCheck" />
+
         <TextView
-            android:id="@+id/tvAboutUs"
+            android:id="@+id/tvProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:padding="10dp"
-            android:text="@string/aboutUs"
-            android:textColor="@color/black"
             android:fontFamily="sans-serif-condensed-medium"
+            android:padding="10dp"
+            android:text="@string/profile"
+            android:textColor="@color/black"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -59,18 +60,19 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/carrer"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/carrer" />
+
         <TextView
             android:id="@+id/tvCarrers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:padding="10dp"
             android:text="@string/carrers"
             android:textColor="@color/black"
-            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -91,19 +93,19 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/blog"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/blog" />
 
         <TextView
             android:id="@+id/tvBlog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:padding="10dp"
             android:text="@string/blog"
             android:textColor="@color/black"
-            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -124,19 +126,53 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/partner"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/user_gray"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tvAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="10dp"
+            android:text="@string/aboutUs"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="10dp"
+        android:background="@color/gray"
+        android:padding="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/partner" />
 
         <TextView
             android:id="@+id/tvPartnerBusiness"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:padding="10dp"
             android:text="@string/partnerBusiness"
             android:textColor="@color/black"
-            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -157,19 +193,19 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/contactus"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/contactus" />
 
         <TextView
             android:id="@+id/tvContactUs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:padding="10dp"
             android:text="@string/contactUs"
             android:textColor="@color/black"
-            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -190,19 +226,19 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/contactsale"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/contactsale" />
 
         <TextView
             android:id="@+id/tvContactSale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:padding="10dp"
             android:text="@string/contactSale"
             android:textColor="@color/black"
-            android:fontFamily="sans-serif-condensed-medium"
             android:textSize="15sp" />
 
     </LinearLayout>

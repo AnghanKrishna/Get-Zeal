@@ -51,22 +51,30 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info_gray"/>
+
             <TextView
                 android:id="@+id/tvInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:drawableStart="@drawable/info_gray"
                 android:text="INFO"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:textColor="@color/black"
                 android:textSize="10dp" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location_on"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:drawableStart="@drawable/location_on_"
                 android:text=".7Mi"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:textColor="@color/black"

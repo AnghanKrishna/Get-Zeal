@@ -15,5 +15,8 @@
         <!-- Customize your theme here. -->
 <!--        to add back button in collapsing toolbar-->
         <item name="windowNoTitle">true</item>
+
+<!--        for rounded corner of bottom sheet-->
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
     </style>
 </resources>

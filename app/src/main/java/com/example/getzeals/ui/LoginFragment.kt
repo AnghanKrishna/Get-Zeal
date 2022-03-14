@@ -1,27 +1,28 @@
-package com.example.getzeals
+package com.example.getzeals.ui
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.fragment.app.Fragment
+import com.example.getzeals.R
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-open class SignupFragment : Fragment() {
+open class LoginFragment : Fragment() {
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
-    private lateinit var signupFullName: EditText
-    private lateinit var signupEmail: EditText
-    private lateinit var signupPass: EditText
-    private lateinit var btnSignUp: Button
+    private lateinit var loginEmail: EditText
+    private lateinit var loginPass: EditText
+    private lateinit var btnSignIn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,18 +37,17 @@ open class SignupFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view: View = inflater.inflate(R.layout.fragment_signup, container, false)
-        signupFullName = view.findViewById(R.id.signupFullName)
-        signupEmail = view.findViewById(R.id.signupEmail)
-        signupPass = view.findViewById(R.id.signupPass)
-        btnSignUp = view.findViewById(R.id.btnSignUp)
-        btnSignUp.setOnClickListener { btnSignUp() }
+        val view: View = inflater.inflate(R.layout.fragment_login, container, false)
+        loginEmail = view.findViewById(R.id.loginEmail)
+        loginPass = view.findViewById(R.id.loginPass)
+        btnSignIn = view.findViewById(R.id.btnLogIn)
+        btnSignIn.setOnClickListener { btnLogin() }
         return view
     }
 
-    private fun btnSignUp() {
-        if (signupFullName.text.isEmpty() || signupEmail.text.isEmpty() || signupPass.text.isEmpty()) {
-            Toast.makeText(requireContext(), "Enter all the fields", Toast.LENGTH_SHORT).show()
+    private fun btnLogin() {
+        if (loginEmail.text.isEmpty() || loginPass.text.isEmpty()) {
+            Toast.makeText(requireContext(), "Enter both the fields", Toast.LENGTH_SHORT).show()
         } else {
             val intent = Intent(activity, HomeActivity::class.java)
             startActivity(intent)
@@ -61,12 +61,12 @@ open class SignupFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment signupFragment.
+         * @return A new instance of fragment loginFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            SignupFragment().apply {
+            LoginFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

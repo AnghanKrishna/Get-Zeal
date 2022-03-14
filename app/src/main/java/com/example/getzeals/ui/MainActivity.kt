@@ -1,7 +1,8 @@
-package com.example.getzeals
+package com.example.getzeals.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.getzeals.R
 import com.example.getzeals.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

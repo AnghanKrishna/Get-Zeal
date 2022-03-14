@@ -13,7 +13,7 @@
         android:theme="@style/Theme.GetZeals">
 
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,16 +21,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".FiltersActivity" />
-        <activity android:name=".OfferDetailActivity" />
-<!--        sidebar-->
-        <activity android:name=".SidebarProfileActivity"/>
-        <activity android:name=".ProfileBankAccount"/>
-        <activity android:name=".ProfileAccount"/>
-        <activity android:name=".SignupBusinessPartner" />
-        <activity android:name=".SigninBusinessPartner" />
 
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.FiltersActivity" />
+        <activity android:name=".ui.OfferDetailActivity" />
+        <!-- sidebar-->
+        <activity android:name=".ui.SidebarProfileActivity" />
+        <activity android:name=".ui.SignupBusinessPartner" />
+        <activity android:name=".ui.SigninBusinessPartner" />
+        <!-- profile sidebar -->
+        <activity android:name=".ui.ProfileAccount" />
+        <activity android:name=".ui.ProfileSettings" />
+        <activity android:name=".ui.ProfileEarning" />
+        <activity android:name=".ui.ProfileBankAccount" />
     </application>
 
 </manifest>

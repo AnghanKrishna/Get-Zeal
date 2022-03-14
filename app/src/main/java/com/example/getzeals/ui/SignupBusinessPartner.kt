@@ -1,4 +1,4 @@
-package com.example.getzeals
+package com.example.getzeals.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -26,7 +26,7 @@ class SignupBusinessPartner : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val intentBack= Intent(this,HomeActivity::class.java)
+        val intentBack= Intent(this, HomeActivity::class.java)
         startActivity(intentBack)
     }
 }

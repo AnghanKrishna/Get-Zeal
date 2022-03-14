@@ -1,4 +1,4 @@
-package com.example.getzeals
+package com.example.getzeals.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.example.getzeals.R
 import com.example.getzeals.databinding.ActivityOfferDetailBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
 

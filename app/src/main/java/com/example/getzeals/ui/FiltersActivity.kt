@@ -1,11 +1,14 @@
-package com.example.getzeals
+package com.example.getzeals.ui
 
+import com.example.getzeals.adapters.FilterAdapter
+import com.example.getzeals.adapters.FilterMoreAdapter
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.getzeals.R
 import com.example.getzeals.databinding.ActivityFiltersBinding
 
 class FiltersActivity : AppCompatActivity() {
@@ -166,7 +169,7 @@ class FiltersActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val intentBack=Intent(this,HomeActivity::class.java)
+        val intentBack=Intent(this, HomeActivity::class.java)
         startActivity(intentBack)
     }
 }

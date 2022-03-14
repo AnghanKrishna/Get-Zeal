@@ -7,4 +7,14 @@
         <item name="cornerSizeBottomRight">16dp</item>
         <item name="cornerSizeBottomLeft">0dp</item>
     </style>
+
+<!--    rounded corner bottom sheet-->
+    <style name="AppBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/drawable_round_bottom_sheet</item>
+    </style>
+
 </resources>

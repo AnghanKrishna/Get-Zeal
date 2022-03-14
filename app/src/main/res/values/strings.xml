@@ -80,17 +80,35 @@
     <string name="account">Account</string>
     <string name="earning">Earnings</string>
     <string name="bankAccount">Bank Account</string>
+    <string name="manageCards">Manage Cards</string>
 
     <!--    user account-->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cashReward">Cash Reward Earned</string>
     <string name="viewTransaction">View Transaction</string>
-    <string name="transferToBank">Tranfer To Bank</string>
+    <string name="transferToBank">Transfer To Bank</string>
     <string name="balance">Balance</string>
     <string name="linkBank">Link Bank</string>
     <string name="btnAddUpdate">Add/Update Bank</string>
     <string name="linkBankDetail">We keep your financial details \n secure so no one sees your \n sensitive info</string>
+    <string name="bankTransfer"><u>Transfer To Your Account</u></string>
+    <string name="withdrawalAmount">Withdrawal Amount</string>
+    <string name="transfer">Transfer</string>
+    <string name="cancel">Cancel</string>
+    <string name="addAccount">Add Account</string>
+    <string name="bankName">Bank Name</string>
+    <string name="accNo">Your Account Number</string>
+    <string name="routingNo">Your Routing Number</string>
+    <string name="bankDetails">Bank Details</string>
+    <string name="profileUp">Profile Update</string>
+    <string name="saveChanges">Save Changes</string>
+    <string name="changePass">Change Password</string>
+    <string name="currPass">Current Password</string>
+    <string name="newPass">New Password</string>
+    <string name="confPass">Confirm Password</string>
+    <string name="aboutYou">About You</string>
+    <string name="aboutDetail">We Will Show You Offers Based On Your Profile That We Think You Will Love.</string>
+    <string name="spDate">Special Date and Anniversaries</string>
+    <string name="identify">How do you identify</string>
 
 </resources>
-
-

@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_edge"
     app:cardCornerRadius="10dp"
     app:cardElevation="4dp"
-    android:background="@drawable/card_edge"
-    app:cardUseCompatPadding="true"
-    android:id="@+id/cardview1">
+    app:cardUseCompatPadding="true">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/bank_accout"
-            android:layout_gravity="center"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/ivBankLogo"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/bank_accout" />
 
             <TextView
                 android:id="@+id/tvBankName"
@@ -32,6 +30,7 @@
                 android:layout_margin="5dp"
                 android:text="Test Bank Name"
                 android:textColor="@color/black"
+                android:layout_toRightOf="@id/ivBankLogo"
                 android:textSize="15sp" />
 
             <TextView
@@ -41,10 +40,10 @@
                 android:layout_margin="5dp"
                 android:text="Bank-123456789"
                 android:textColor="@color/black"
+                android:layout_toRightOf="@id/ivBankLogo"
+                android:layout_below="@id/tvBankName"
                 android:textSize="15sp" />
 
-        </LinearLayout>
-
-    </LinearLayout>
+    </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

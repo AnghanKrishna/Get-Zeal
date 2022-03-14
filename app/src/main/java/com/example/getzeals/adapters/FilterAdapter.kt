@@ -1,4 +1,4 @@
-package com.example.getzeals
+package com.example.getzeals.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -9,6 +9,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.getzeals.ui.FilterModel
+import com.example.getzeals.R
 
 class FilterAdapter :
     RecyclerView.Adapter<FilterAdapter.ViewHolder>() {

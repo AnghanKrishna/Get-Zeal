@@ -1,4 +1,4 @@
-package com.example.getzeals
+package com.example.getzeals.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.getzeals.ui.OfferModel
+import com.example.getzeals.R
 
 class OfferAdapter(private val arraylist: List<OfferModel>) :
     RecyclerView.Adapter<OfferAdapter.ViewHolder>() {

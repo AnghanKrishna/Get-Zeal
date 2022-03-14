@@ -1,12 +1,13 @@
-package com.example.getzeals
+package com.example.getzeals.ui
 
+import com.example.getzeals.adapters.OfferAdapter
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.getzeals.R
 import com.example.getzeals.databinding.ActivityHomeBinding
-import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlin.collections.ArrayList
 
 class HomeActivity : AppCompatActivity() {
@@ -79,7 +80,7 @@ class HomeActivity : AppCompatActivity() {
                     filterModel.isClicked = index == position
                 }
 
-                if (posi.img == 2131165290 || posi.img == 2131165291 || posi.img == 2131165292 || posi.img == 2131165293 || posi.img == 2131165294) {
+                if (posi.img == 2131165296 || posi.img == 2131165291 || posi.img == 2131165292 || posi.img == 2131165293 || posi.img == 2131165294) {
                     val offerDetail = Intent(this@HomeActivity, OfferDetailActivity::class.java)
                     startActivity(offerDetail)
                 }

@@ -1,5 +1,6 @@
 package com.example.getzeals.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.getzeals.databinding.ActivityProfileEarningBinding
@@ -12,5 +13,10 @@ class ProfileEarning : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityProfileEarningBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.llHeader.setOnClickListener {
+            var back= Intent(this,SidebarProfileActivity::class.java)
+            startActivity(back)
+        }
     }
 }

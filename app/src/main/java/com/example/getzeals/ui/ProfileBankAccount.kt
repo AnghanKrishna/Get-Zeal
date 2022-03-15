@@ -3,6 +3,7 @@ package com.example.getzeals.ui
 import android.app.ActionBar
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
@@ -19,6 +20,11 @@ class ProfileBankAccount : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ProfileBankAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.llHeader.setOnClickListener {
+            var back= Intent(this,SidebarProfileActivity::class.java)
+            startActivity(back)
+        }
 
         binding.btnAddAcc.setOnClickListener {
             val dialog = Dialog(context)

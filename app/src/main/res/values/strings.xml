@@ -99,7 +99,7 @@
     <string name="bankName">Bank Name</string>
     <string name="accNo">Your Account Number</string>
     <string name="routingNo">Your Routing Number</string>
-    <string name="bankDetails">Bank Details</string>
+    <string name="addBank">Add New Bank Account</string>
     <string name="profileUp">Profile Update</string>
     <string name="saveChanges">Save Changes</string>
     <string name="changePass">Change Password</string>
@@ -109,6 +109,7 @@
     <string name="aboutYou">About You</string>
     <string name="aboutDetail">We Will Show You Offers Based On Your Profile That We Think You Will Love.</string>
     <string name="spDate">Special Date and Anniversaries</string>
-    <string name="identify">How do you identify</string>
+    <string name="identify">How do you identify \nYourSelf</string>
+    <string name="addEvent">+Add Event</string>
 
 </resources>

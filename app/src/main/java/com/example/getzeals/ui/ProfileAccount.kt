@@ -3,6 +3,7 @@ package com.example.getzeals.ui
 import android.app.ActionBar
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.View.*
 import android.view.Window
@@ -21,6 +22,11 @@ class ProfileAccount : AppCompatActivity() {
         binding = ProfileAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.llHeader.setOnClickListener {
+            var back=Intent(this,SidebarProfileActivity::class.java)
+            startActivity(back)
+        }
+
         binding.ivLinkBank.setOnClickListener {
             val dialog = Dialog(context)
             dialog.setContentView(R.layout.dialog_link_bank)
@@ -30,7 +36,7 @@ class ProfileAccount : AppCompatActivity() {
         }
 
         binding.tvViewTransaction.setOnClickListener{
-            binding.llViewTable.visibility= VISIBLE
+            binding.cvViewTran.visibility= VISIBLE
         }
 
         binding.tvBankTransfer.setOnClickListener {

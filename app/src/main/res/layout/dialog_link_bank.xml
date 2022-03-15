@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:ignore="contentDescription">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/linkBank"
-        android:textColor="@color/yellow"
         android:textAlignment="center"
+        android:textColor="@color/yellow"
         android:textSize="30sp"
-        android:textStyle="italic"/>
+        android:layout_marginTop="10dp"
+        android:textStyle="italic" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/linkBankDetail"
         android:gravity="center"
+        android:text="@string/linkBankDetail"
         android:textSize="15sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="25dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -38,33 +39,58 @@
             android:src="@drawable/acc_img" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_margin="10dp"
-            android:layout_weight="1"
             android:layout_marginTop="18dp"
+            android:layout_weight="1"
             android:background="@drawable/btn_border_gray"
-            android:inputType="number"
-            android:padding="5dp"
-            android:textSize="15dp"
             android:hint="Active"
-            android:textColor="@color/black"/>
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
 
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLogIn"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/bg_card_pink_light"
-        android:text="@string/btnAddUpdate"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="@color/white" />
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card_white"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/gray" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card_pink_light"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/btnAddUpdate"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
 
 </LinearLayout>

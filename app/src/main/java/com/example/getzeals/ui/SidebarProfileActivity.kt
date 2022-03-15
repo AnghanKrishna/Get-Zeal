@@ -39,5 +39,10 @@ class SidebarProfileActivity : AppCompatActivity() {
         binding.cvManageCards.setOnClickListener {
             Toast.makeText(this, "Coming Soon......", Toast.LENGTH_SHORT).show()
         }
+
+    }
+    override fun onBackPressed() {
+        val intentBack= Intent(this, HomeActivity::class.java)
+        startActivity(intentBack)
     }
 }

@@ -5,8 +5,11 @@ import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.view.View.*
 import android.view.Window
+import android.widget.Button
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.getzeals.R
 import com.example.getzeals.databinding.ProfileAccountBinding
@@ -23,14 +26,23 @@ class ProfileAccount : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.llHeader.setOnClickListener {
-            var back=Intent(this,SidebarProfileActivity::class.java)
+            val back=Intent(this,SidebarProfileActivity::class.java)
             startActivity(back)
         }
 
         binding.ivLinkBank.setOnClickListener {
             val dialog = Dialog(context)
             dialog.setContentView(R.layout.dialog_link_bank)
+            val btnAddUpdate = dialog.findViewById<View>(R.id.btnAddUpdate) as Button
+            val btnCancel = dialog.findViewById<View>(R.id.btnCancel) as Button
+            val privacyPolicy = dialog.findViewById<View>(R.id.llPrivacyPolicy) as LinearLayout
             dialog.show()
+            btnCancel.setOnClickListener {
+                privacyPolicy.visibility= GONE
+            }
+            btnAddUpdate.setOnClickListener {
+                privacyPolicy.visibility= VISIBLE
+            }
             val window: Window = dialog.window!!
             window.setLayout(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.WRAP_CONTENT)
         }

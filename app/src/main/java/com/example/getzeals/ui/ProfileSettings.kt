@@ -21,8 +21,9 @@ class ProfileSettings : AppCompatActivity() {
         }
 
         binding.viewpager.adapter = ViewPagerAdapter(supportFragmentManager)
+//        default 0th tab will be display
         binding.viewpager.currentItem =0
         //link tab with the viewpager
-        binding.tablayout.setupWithViewPager(binding.viewpager)
+        binding.tabLayout.setupWithViewPager(binding.viewpager)
     }
 }

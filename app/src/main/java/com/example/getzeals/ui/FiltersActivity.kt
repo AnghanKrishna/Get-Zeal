@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.getzeals.R
 import com.example.getzeals.databinding.ActivityFiltersBinding
+import com.example.getzeals.models.FilterModel
+import com.example.getzeals.models.FilterMoreModel
 
 class FiltersActivity : AppCompatActivity() {
 

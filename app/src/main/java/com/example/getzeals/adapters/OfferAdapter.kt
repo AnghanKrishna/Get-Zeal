@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.getzeals.ui.OfferModel
+import com.example.getzeals.models.OfferModel
 import com.example.getzeals.R
 
 class OfferAdapter(private val arraylist: List<OfferModel>) :

@@ -8,6 +8,7 @@ import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.getzeals.R
 import com.example.getzeals.databinding.ActivityHomeBinding
+import com.example.getzeals.models.OfferModel
 import kotlin.collections.ArrayList
 
 class HomeActivity : AppCompatActivity() {
@@ -80,7 +81,7 @@ class HomeActivity : AppCompatActivity() {
                     filterModel.isClicked = index == position
                 }
 
-                if (posi.img == 2131165296 || posi.img == 2131165291 || posi.img == 2131165292 || posi.img == 2131165293 || posi.img == 2131165294) {
+                if (posi.img == 2131165298 || posi.img == 2131165299 || posi.img == 2131165300 || posi.img == 2131165301 || posi.img == 2131165302) {
                     val offerDetail = Intent(this@HomeActivity, OfferDetailActivity::class.java)
                     startActivity(offerDetail)
                 }

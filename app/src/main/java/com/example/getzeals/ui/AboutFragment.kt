@@ -1,15 +1,10 @@
 package com.example.getzeals.ui
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.cardview.widget.CardView
-import androidx.core.content.ContextCompat
-import androidx.core.view.*
 import androidx.fragment.app.Fragment
 import com.example.getzeals.R
 
@@ -47,10 +42,6 @@ class AboutFragment : Fragment() {
         val male = view.findViewById<View>(R.id.cvMale) as CardView
         val female = view.findViewById<View>(R.id.cvFemale) as CardView
         val self = view.findViewById<View>(R.id.cvSelf) as CardView
-
-        val tvMale = view.findViewById<View>(R.id.tvMale) as TextView
-        val tvFemale = view.findViewById<View>(R.id.tvFemale) as TextView
-        val tvSelf = view.findViewById<View>(R.id.tvSelf) as TextView
 
         male.setOnClickListener {
             male.setBackgroundResource(R.drawable.bg_card_gray)

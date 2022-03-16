@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.getzeals.ui.FilterModel
+import com.example.getzeals.models.FilterModel
 import com.example.getzeals.R
 
 class FilterAdapter :

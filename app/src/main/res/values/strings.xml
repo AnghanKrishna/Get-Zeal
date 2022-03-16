@@ -109,7 +109,17 @@
     <string name="aboutYou">About You</string>
     <string name="aboutDetail">We Will Show You Offers Based On Your Profile That We Think You Will Love.</string>
     <string name="spDate">Special Date and Anniversaries</string>
-    <string name="identify">How do you identify \nYourSelf</string>
+    <string name="identify">How do you identify YourSelf</string>
     <string name="addEvent">+Add Event</string>
+    <string name="addHeading">Paid App uses Plaid to connect your account</string>
+    <string name="addTopic1">Connect Effortlessly</string>
+    <string name="addContent1">Plaid let you securely connect your financial accounts in seconds</string>
+    <string name="addTopic2">Your data belongs to you</string>
+    <string name="addContent2">Plaid doesn\'t sell personal information, and will only use it with your permission</string>
+    <string name="termPrivacy">By selecting \"Agree\" you agree to the Plaid End User Private Policy</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="btnAgree">Agree</string>
+    <string name="btnSubmit">Submit</string>
 
 </resources>
+

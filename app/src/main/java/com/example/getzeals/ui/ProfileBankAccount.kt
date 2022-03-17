@@ -22,7 +22,7 @@ class ProfileBankAccount : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.llHeader.setOnClickListener {
-            var back= Intent(this,SidebarProfileActivity::class.java)
+            val back= Intent(this,SidebarProfileActivity::class.java)
             startActivity(back)
         }
 

@@ -13,7 +13,7 @@
         android:theme="@style/Theme.GetZeals">
 
         <activity
-            android:name=".ui.SidebarProfileActivity"
+            android:name=".ui.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,11 +22,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.SidebarProfileActivity" />
         <activity android:name=".ui.FiltersActivity" />
         <activity android:name=".ui.OfferDetailActivity" />
         <!-- sidebar-->
-        <activity android:name=".ui.HomeActivity" />
+        <activity android:name=".ui.MainActivity" />
         <activity android:name=".ui.SignupBusinessPartner" />
         <activity android:name=".ui.SigninBusinessPartner" />
         <!-- profile sidebar -->

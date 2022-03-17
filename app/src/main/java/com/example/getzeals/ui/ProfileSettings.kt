@@ -16,13 +16,13 @@ class ProfileSettings : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.llHeader.setOnClickListener {
-            var back= Intent(this,SidebarProfileActivity::class.java)
+            val back = Intent(this, SidebarProfileActivity::class.java)
             startActivity(back)
         }
 
         binding.viewpager.adapter = ViewPagerAdapter(supportFragmentManager)
 //        default 0th tab will be display
-        binding.viewpager.currentItem =0
+        binding.viewpager.currentItem = 0
         //link tab with the viewpager
         binding.tabLayout.setupWithViewPager(binding.viewpager)
     }

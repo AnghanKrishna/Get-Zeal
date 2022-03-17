@@ -17,23 +17,23 @@ class SidebarProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.cvAccount.setOnClickListener {
-            var account=Intent(this, ProfileAccount::class.java)
+            val account=Intent(this, ProfileAccount::class.java)
             startActivity(account)
         }
 
         binding.cvProfile.setOnClickListener {
-            var profile=Intent(this, ProfileSettings::class.java)
+            val profile=Intent(this, ProfileSettings::class.java)
             startActivity(profile)
         }
 
         binding.cvEarning.setOnClickListener {
-            var earning=Intent(this, ProfileEarning::class.java)
+            val earning=Intent(this, ProfileEarning::class.java)
             startActivity(earning)
         }
 
         binding.cvBankAccount.setOnClickListener {
-            var bankaccount=Intent(this, ProfileBankAccount::class.java)
-            startActivity(bankaccount)
+            val bankAccount=Intent(this, ProfileBankAccount::class.java)
+            startActivity(bankAccount)
         }
 
         binding.cvManageCards.setOnClickListener {
@@ -41,8 +41,8 @@ class SidebarProfileActivity : AppCompatActivity() {
         }
 
     }
-    override fun onBackPressed() {
-        val intentBack= Intent(this, HomeActivity::class.java)
-        startActivity(intentBack)
-    }
+//    override fun onBackPressed() {
+//        val intentBack= Intent(this, HomeActivity::class.java)
+//        startActivity(intentBack)
+//    }
 }

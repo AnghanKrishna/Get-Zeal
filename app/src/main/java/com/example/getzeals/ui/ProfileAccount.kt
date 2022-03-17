@@ -26,7 +26,7 @@ class ProfileAccount : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.llHeader.setOnClickListener {
-            val back=Intent(this,SidebarProfileActivity::class.java)
+            val back = Intent(this, SidebarProfileActivity::class.java)
             startActivity(back)
         }
 
@@ -38,17 +38,20 @@ class ProfileAccount : AppCompatActivity() {
             val privacyPolicy = dialog.findViewById<View>(R.id.llPrivacyPolicy) as LinearLayout
             dialog.show()
             btnCancel.setOnClickListener {
-                privacyPolicy.visibility= GONE
+                privacyPolicy.visibility = GONE
             }
             btnAddUpdate.setOnClickListener {
-                privacyPolicy.visibility= VISIBLE
+                privacyPolicy.visibility = VISIBLE
             }
             val window: Window = dialog.window!!
-            window.setLayout(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.WRAP_CONTENT)
+            window.setLayout(
+                ActionBar.LayoutParams.MATCH_PARENT,
+                ActionBar.LayoutParams.WRAP_CONTENT
+            )
         }
 
-        binding.tvViewTransaction.setOnClickListener{
-            binding.cvViewTran.visibility= VISIBLE
+        binding.tvViewTransaction.setOnClickListener {
+            binding.cvViewTran.visibility = VISIBLE
         }
 
         binding.tvBankTransfer.setOnClickListener {
@@ -57,7 +60,7 @@ class ProfileAccount : AppCompatActivity() {
 
     }
 
-//    add style and theme for rounded corners
+    //    add style and theme for rounded corners
     private fun showBottomSheetDialog() {
         val bottomSheetDialog = BottomSheetDialog(this)
         bottomSheetDialog.setContentView(R.layout.bank_tranfer_process)

@@ -10,11 +10,11 @@ import com.example.getzeals.ui.ProfileFragment
 class ViewPagerAdapter(fragment: FragmentManager) : FragmentPagerAdapter(fragment) {
 
     override fun getItem(position: Int): Fragment {
-        when (position) {
-            0 -> return ProfileFragment()
-            1 -> return PasswordFragment()
-            2 -> return AboutFragment()
-            else -> return ProfileFragment()
+        return when (position) {
+            0 -> ProfileFragment()
+            1 -> PasswordFragment()
+            2 -> AboutFragment()
+            else -> ProfileFragment()
         }
     }
 
